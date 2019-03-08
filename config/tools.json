@@ -1,0 +1,41 @@
+[{
+    "id": "uppercase",
+    "name": "Uppercase",
+    "description": "Transform letters uppercase",
+    "author": "leplay",
+    "category": "Converters",
+    "related": ["lowercase"]
+  },
+  {
+    "id": "lowercase",
+    "name": "Lowercase",
+    "description": "Transform letters lowercase",
+    "author": "leplay",
+    "category": "Converters",
+    "related": ["uppercase"]
+  },
+  {
+    "id": "url-encoder",
+    "name": "URL Encoder",
+    "description": "URL encoder",
+    "author": "leplay",
+    "category": "Encoders & Decoders",
+    "related": ["url-decoder"]
+  },
+  {
+    "id": "url-decoder",
+    "name": "URL Decoder",
+    "description": "URL Decoder",
+    "author": "leplay",
+    "category": "Encoders & Decoders",
+    "related": ["url-encoder"]
+  },
+  {
+    "id": "random-number",
+    "name": "Random Number Generator",
+    "description": "Generate random number",
+    "author": "leplay",
+    "category": "Generators",
+    "related": ["random-string"]
+  }
+]
