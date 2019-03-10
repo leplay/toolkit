@@ -32,7 +32,13 @@
 import tools from '@/config/tools'
 import categories from '@/config/categories'
 export default {
-  components: {
+  head () {
+    return {
+      title: 'Toolkit.city',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Open source tools collection' }
+      ]
+    }
   },
   data () {
     return {

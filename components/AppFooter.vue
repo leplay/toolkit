@@ -8,6 +8,8 @@
         <strong>Toolkit.city</strong> by
         <a href="https://leplay.net">Leplay</a>.
       </p>
+      <p><a href="/credits">Credits</a></p>
+      <p><a href="/faq">FAQ</a></p>
     </div>
   </footer>
 </template>
