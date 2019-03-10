@@ -53,5 +53,13 @@
     "author": "leplay",
     "category": "Generators",
     "related": ["random-string"]
+  },
+  {
+    "id": "md5",
+    "name": "MD5 Generator",
+    "description": "MD5 Generator",
+    "author": "leplay",
+    "category": "Generators",
+    "related": ["md5"]
   }
 ]
