@@ -1,52 +1,50 @@
 <template>
   <div class="tool container">
-    <h3 class="subtitle has-text-centered">{{ app.name }}</h3>
-    <p class="has-text-centered">{{ app.description }}</p>
-    <textarea v-model="input" class="textarea editor" placeholder="Input your text here" rows="10" />
+    <h3 class="title has-text-centered">{{ app.name }}</h3>
+    <p class="description has-text-centered">{{ app.description }}</p>
 
-    <div class="columns is-centered">
-      <button class="button is-medium is-primary" @click="lowercase">Lowercase</button>
-      <button class="button is-medium is-light" @click="uppercase">Uppercase</button>
+    <div class="tool-box columns-two">
+      <InputEditor class="column" />
+      <OutputEditor class="column" :data="dataMap" :readonly="true" />
     </div>
   </div>
 </template>
 
 <script>
 import meta from '@/config/meta'
+import InputEditor from '@/components/InputEditor'
+import OutputEditor from '@/components/OutputEditor'
 const app = meta('lowercase')
 
 export default {
-  components: {},
+  components: { InputEditor, OutputEditor },
   head () {
     return app.head
   },
   data () {
     return {
-      app,
-      input: ''
+      app
     }
   },
-  methods: {
-    uppercase () {
-      this.input = this.input.toUpperCase()
-    },
-    lowercase () {
-      this.input = this.input.toLowerCase()
+  computed: {
+    dataMap () {
+      return [
+        {
+          label: 'lowercase',
+          url: 'lowercase',
+          data: this.$store.state.input.toLowerCase()
+        },
+        {
+          label: 'uppercase',
+          url: 'uppercase',
+          data: this.$store.state.input.toUpperCase()
+        }
+      ]
     }
   }
 }
 </script>
 
 <style scoped>
-.subtitle {
-  font-size: 32px;
-}
-.editor {
-  font-family: Menlo, monospace;
-  margin: 30px 0;
-}
-.columns .button {
-  margin: 0 12px;
-  outline: none;
-}
+/* inherrit from layout/default.vue */
 </style>

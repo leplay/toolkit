@@ -1,7 +1,7 @@
 <template>
   <section>
     <AppHeader v-if="path !== '/'" />
-    <div class="content">
+    <div class="page-content">
       <nuxt />
     </div>
     <AppFooter />
@@ -46,8 +46,31 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
-.content {
+.page-content {
   padding: 40px 20px;
   overflow: hidden;
+}
+
+/* Tool Page CSS */
+.tool {
+}
+.tool .title {
+
+}
+.tool .description {
+  margin: 20px 0 40px;
+}
+.tool .tool-box {
+  box-shadow: 0 2px 4px #eee;
+  overflow: hidden;
+  border-radius: 6px;
+  border: 1px solid #eee;
+}
+.tool .tool-box.columns-two .column {
+  width: 50%;
+  min-height: 400px;
+  float: left;
+  box-sizing: border-box;
+  position: relative;
 }
 </style>

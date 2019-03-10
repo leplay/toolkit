@@ -49,7 +49,7 @@ module.exports = {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    // '@nuxtjs/axios'
+    '@nuxtjs/axios',
     ['nuxt-buefy', {
       css: true,
       materialDesignIcons: false
@@ -77,6 +77,7 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
+    analyze: true,
     splitChunks: {
       layouts: false,
       pages: true,

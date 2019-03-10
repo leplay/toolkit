@@ -14,7 +14,7 @@
 import meta from '@/config/meta'
 import InputEditor from '@/components/InputEditor'
 import OutputEditor from '@/components/OutputEditor'
-const app = meta('uppercase')
+const app = meta('base64-encoder')
 
 export default {
   components: { InputEditor, OutputEditor },
@@ -28,16 +28,28 @@ export default {
   },
   computed: {
     dataMap () {
+      if (!process.client) return []
+      let result
+      try {
+        result = this.$store.state.tabIndex === 0 ? window.btoa(this.$store.state.input) : window.atob(this.$store.state.input)
+      } catch (e) {
+        result = ''
+        this.$toast.open({
+          duration: 5000,
+          message: `error`,
+          type: 'is-danger'
+        })
+      }
       return [
         {
-          label: 'uppercase',
-          url: 'uppercase',
-          data: this.$store.state.input.toUpperCase()
+          label: 'encode',
+          url: 'base64-encoder',
+          data: result
         },
         {
-          label: 'lowercase',
-          url: 'lowercase',
-          data: this.$store.state.input.toLowerCase()
+          label: 'decode',
+          url: 'base64-decoder',
+          data: result
         }
       ]
     }

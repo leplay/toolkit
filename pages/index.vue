@@ -8,7 +8,7 @@
     <div class="github">
       <a
         class="github-button"
-        href="https://github.com/leplay/toolkit.city"
+        href="https://github.com/toolkitcity/toolkit.city"
         data-size="large"
         data-show-count="true"
         aria-label="Star leplay/toolkit.city on GitHub"

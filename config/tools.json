@@ -31,6 +31,22 @@
     "related": ["url-encoder"]
   },
   {
+    "id": "base64-encoder",
+    "name": "Base64 Encoder",
+    "description": "Base64 encoder",
+    "author": "leplay",
+    "category": "Encoders & Decoders",
+    "related": ["base64-decoder"]
+  },
+  {
+    "id": "base64-decoder",
+    "name": "Base64 Decoder",
+    "description": "Base64 decoder",
+    "author": "leplay",
+    "category": "Encoders & Decoders",
+    "related": ["base64-encoder"]
+  },
+  {
     "id": "random-number",
     "name": "Random Number Generator",
     "description": "Generate random number",

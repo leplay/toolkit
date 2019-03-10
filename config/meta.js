@@ -1,6 +1,9 @@
-import _ from 'lodash'
 import tools from './tools'
-const toolsById = _.keyBy(tools, 'id')
+
+const toolsById = tools.reduce(function (acc, val) {
+  acc[val.id] = val
+  return acc
+}, {})
 
 export default function (id) {
   const app = toolsById[id]
