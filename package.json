@@ -19,7 +19,8 @@
     "cross-env": "^5.2.0",
     "md5": "^2.2.1",
     "nuxt": "^2.4.0",
-    "nuxt-buefy": "^0.3.3"
+    "nuxt-buefy": "^0.3.3",
+    "sha.js": "^2.4.11"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",
