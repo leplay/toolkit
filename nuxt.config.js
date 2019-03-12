@@ -55,7 +55,7 @@ module.exports = {
       materialDesignIcons: false
     }],
     ['@nuxtjs/google-analytics', {
-      id: 'UA-135525557-2'
+      id: 'UA-136123372-1'
     }],
     '@nuxtjs/sitemap'
   ],
