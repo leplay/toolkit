@@ -67,7 +67,13 @@ module.exports = {
   },
   sitemap: {
     generate: true,
-    hostname: 'https://toolkit.city'
+    hostname: 'https://toolkit.city',
+    filter ({ routes }) {
+      return routes.map(function (route) {
+        route.url = `${route.url}/`
+        return route
+      })
+    }
   },
 
   /*
