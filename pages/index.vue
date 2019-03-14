@@ -20,7 +20,7 @@
         <h3 class="category-title">{{ category }}</h3>
         <ul class="tools">
           <li v-for="item in toolsByCategory[category]" :key="item.id" class="item">
-            <a :href="'/' + item.id" :title="item.description">{{ item.name }}</a>
+            <a :href="'/' + item.id + '/'" :title="item.description">{{ item.name }}</a>
           </li>
         </ul>
       </div>
@@ -36,7 +36,7 @@ export default {
     return {
       title: 'Toolkit.city',
       meta: [
-        { hid: 'description', name: 'description', content: 'Open source tools collection' }
+        { hid: 'description', name: 'description', content: 'Open source tools collection for making lives easier.' }
       ]
     }
   },

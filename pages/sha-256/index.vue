@@ -1,6 +1,6 @@
 <template>
   <div class="tool container">
-    <h3 class="title has-text-centered">{{ app.name }}</h3>
+    <h1 class="title has-text-centered">{{ app.name }}</h1>
     <p class="description has-text-centered">{{ app.description }}</p>
 
     <div class="tool-box columns-two">
@@ -45,6 +45,14 @@ export default {
         {
           label: 'SHA-384',
           data: shajs('sha384').update(this.$store.state.input).digest('hex')
+        },
+        {
+          label: 'SHA-0',
+          data: shajs('sha').update(this.$store.state.input).digest('hex')
+        },
+        {
+          label: 'SHA-1',
+          data: shajs('sha1').update(this.$store.state.input).digest('hex')
         }
       ]
     }

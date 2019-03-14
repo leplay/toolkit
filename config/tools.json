@@ -17,7 +17,7 @@
   {
     "id": "url-encoder",
     "name": "URL Encoder",
-    "description": "URL encoder",
+    "description": "URL encoder converts special URL characters in strings to safe percent-sign characters.",
     "author": "leplay",
     "category": "Encoders & Decoders",
     "related": ["url-decoder"]
@@ -25,7 +25,7 @@
   {
     "id": "url-decoder",
     "name": "URL Decoder",
-    "description": "URL Decoder",
+    "description": "URL decoder converts percent-sign special characters in safe URL strings to regular strings.",
     "author": "leplay",
     "category": "Encoders & Decoders",
     "related": ["url-encoder"]
@@ -33,7 +33,7 @@
   {
     "id": "base64-encoder",
     "name": "Base64 Encoder",
-    "description": "Base64 encoder",
+    "description": "Base64 encoder converts texts to base64-encoded strings.",
     "author": "leplay",
     "category": "Encoders & Decoders",
     "related": ["base64-decoder"]
@@ -41,7 +41,7 @@
   {
     "id": "base64-decoder",
     "name": "Base64 Decoder",
-    "description": "Base64 decoder",
+    "description": "Base64 decoder converts base64-encoded strings back to regular texts.",
     "author": "leplay",
     "category": "Encoders & Decoders",
     "related": ["base64-encoder"]
@@ -57,7 +57,7 @@
   {
     "id": "md5",
     "name": "MD5 Generator",
-    "description": "MD5 Generator",
+    "description": "MD5 calculator generates MD5 checksum of text or string.",
     "author": "leplay",
     "category": "Generators",
     "related": ["md5"]
@@ -65,7 +65,7 @@
   {
     "id": "sha-256",
     "name": "SHA-256 Generator",
-    "description": "SHA-256 Generator",
+    "description": "SHA-256 calculator generates SHA-256 checksum of text or string.",
     "author": "leplay",
     "category": "Generators",
     "related": ["sha-512", "sha-224", "sha-384"]
@@ -73,15 +73,31 @@
   {
     "id": "sha-512",
     "name": "SHA-512 Generator",
-    "description": "SHA-512 Generator",
+    "description": "SHA-512 calculator generates SHA-512 checksum of text or string.",
     "author": "leplay",
     "category": "Generators",
     "related": ["sha-256", "sha-224", "sha-384"]
   },
   {
+    "id": "sha-0",
+    "name": "SHA-0 Generator",
+    "description": "SHA-0 calculator generates SHA-0 checksum of text or string.",
+    "author": "leplay",
+    "category": "Generators",
+    "related": ["sha-1"]
+  },
+  {
+    "id": "sha-1",
+    "name": "SHA-1 Generator",
+    "description": "SHA-1 calculator generates SHA-1 checksum of text or string.",
+    "author": "leplay",
+    "category": "Generators",
+    "related": ["sha-0"]
+  },
+  {
     "id": "sha-224",
     "name": "SHA-224 Generator",
-    "description": "SHA-224 Generator",
+    "description": "SHA-224 calculator generates SHA-224 checksum of text or string.",
     "author": "leplay",
     "category": "Generators",
     "related": ["sha-256", "sha-384", "sha-512"]
@@ -89,7 +105,7 @@
   {
     "id": "sha-384",
     "name": "SHA-384 Generator",
-    "description": "SHA-384 Generator",
+    "description": "SHA-384 calculator generates SHA-384 checksum of text or string.",
     "author": "leplay",
     "category": "Generators",
     "related": ["sha-256", "sha-512", "sha-224"]

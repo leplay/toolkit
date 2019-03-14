@@ -11,10 +11,11 @@
 </template>
 
 <script>
+import shajs from 'sha.js'
 import meta from '@/config/meta'
 import InputEditor from '@/components/InputEditor'
 import OutputEditor from '@/components/OutputEditor'
-const app = meta('url-encoder')
+const app = meta('sha-0')
 
 export default {
   components: { InputEditor, OutputEditor },
@@ -28,27 +29,30 @@ export default {
   },
   computed: {
     dataMap () {
-      let result
-      try {
-        result = this.$store.state.tabIndex === 0 ? encodeURIComponent(this.$store.state.input) : decodeURIComponent(this.$store.state.input)
-      } catch (e) {
-        result = ''
-        this.$toast.open({
-          duration: 5000,
-          message: `error`,
-          type: 'is-danger'
-        })
-      }
       return [
         {
-          label: 'encode',
-          url: 'url-encoder',
-          data: result
+          label: 'SHA-0',
+          data: shajs('sha').update(this.$store.state.input).digest('hex')
         },
         {
-          label: 'decode',
-          url: 'url-decoder',
-          data: result
+          label: 'SHA-1',
+          data: shajs('sha1').update(this.$store.state.input).digest('hex')
+        },
+        {
+          label: 'SHA-256',
+          data: shajs('sha256').update(this.$store.state.input).digest('hex')
+        },
+        {
+          label: 'SHA-512',
+          data: shajs('sha512').update(this.$store.state.input).digest('hex')
+        },
+        {
+          label: 'SHA-224',
+          data: shajs('sha224').update(this.$store.state.input).digest('hex')
+        },
+        {
+          label: 'SHA-384',
+          data: shajs('sha384').update(this.$store.state.input).digest('hex')
         }
       ]
     }
