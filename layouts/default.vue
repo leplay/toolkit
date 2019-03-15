@@ -73,4 +73,15 @@ html {
   box-sizing: border-box;
   position: relative;
 }
+.tool .tool-box.columns-one .column {
+  width: 100%;
+  min-height: 400px;
+  box-sizing: border-box;
+  position: relative;
+}
+.tool .partner {
+  margin: 30px 0 0;
+  text-align: center;
+  font-size: 16px;
+}
 </style>

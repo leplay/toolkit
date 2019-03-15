@@ -109,5 +109,21 @@
     "author": "leplay",
     "category": "Generators",
     "related": ["sha-256", "sha-512", "sha-224"]
+  },
+  {
+    "id": "ip",
+    "name": "My IP",
+    "description": "Show your IP address.",
+    "author": "leplay",
+    "category": "Others",
+    "related": []
+  },
+  {
+    "id": "user-agent",
+    "name": "User Agent",
+    "description": "Show your web browser's user agent.",
+    "author": "leplay",
+    "category": "Others",
+    "related": []
   }
 ]
