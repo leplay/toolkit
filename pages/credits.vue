@@ -8,6 +8,7 @@
       <li><a href="https://bulma.io/">Bulma</a></li>
       <li><a href="https://github.com/pvorb/node-md5">MD5</a></li>
       <li><a href="https://github.com/crypto-browserify/sha.js">sha.js</a></li>
+      <li><a href="https://github.com/showdownjs/showdown">showdown</a></li>
     </ul>
   </div>
 </template>

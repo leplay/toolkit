@@ -1,6 +1,6 @@
 [{
     "id": "uppercase",
-    "name": "Uppercase",
+    "name": "Uppercase Coverter",
     "description": "Transform letters uppercase",
     "author": "leplay",
     "category": "Converters",
@@ -8,7 +8,7 @@
   },
   {
     "id": "lowercase",
-    "name": "Lowercase",
+    "name": "Lowercase Coverter",
     "description": "Transform letters lowercase",
     "author": "leplay",
     "category": "Converters",
@@ -124,6 +124,14 @@
     "description": "Show your web browser's user agent.",
     "author": "leplay",
     "category": "Others",
+    "related": []
+  },
+  {
+    "id": "markdown-to-html",
+    "name": "Markdown to HTML",
+    "description": "Convert Markdown to HTML.",
+    "author": "leplay",
+    "category": "Converters",
     "related": []
   }
 ]
