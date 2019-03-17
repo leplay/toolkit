@@ -86,3 +86,4 @@ sw.*
 # Custom
 static/sitemap.xml
 static/functions
+tools.json

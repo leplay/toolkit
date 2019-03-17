@@ -1,0 +1,8 @@
+{
+  "id": "sha-0",
+  "name": "SHA-0 Generator",
+  "description": "SHA-0 calculator generates SHA-0 checksum of text or string.",
+  "author": "leplay",
+  "category": "Generators",
+  "related": ["sha-1"]
+}

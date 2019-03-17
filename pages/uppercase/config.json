@@ -1,0 +1,8 @@
+{
+  "id": "uppercase",
+  "name": "Uppercase Coverter",
+  "description": "Transform letters uppercase",
+  "author": "leplay",
+  "category": "Converters",
+  "related": ["lowercase"]
+}

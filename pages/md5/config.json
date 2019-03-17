@@ -1,0 +1,8 @@
+  {
+    "id": "md5",
+    "name": "MD5 Generator",
+    "description": "MD5 calculator generates MD5 checksum of text or string.",
+    "author": "leplay",
+    "category": "Generators",
+    "related": ["md5"]
+  }

@@ -1,0 +1,8 @@
+{
+  "id": "random-number",
+  "name": "Random Number Generator",
+  "description": "Generate random number",
+  "author": "leplay",
+  "category": "Generators",
+  "related": ["random-string"]
+}

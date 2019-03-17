@@ -1,0 +1,8 @@
+{
+  "id": "base64-encoder",
+  "name": "Base64 Encoder",
+  "description": "Base64 encoder converts texts to base64-encoded strings.",
+  "author": "leplay",
+  "category": "Encoders & Decoders",
+  "related": ["base64-decoder"]
+}

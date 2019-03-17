@@ -6,7 +6,7 @@
     <div class="tool-box columns-one">
       <OutputEditor class="column" :data="dataMap" :readonly="true" />
     </div>
-    <p class="partner">The public IP address API is served by <a href="https://www.ipify.org/">ipify</a>.</p>
+    <p class="partner">The public IP address API is served by <a href="https://www.ipify.org/" target="_blank">ipify</a>.</p>
   </div>
 </template>
 

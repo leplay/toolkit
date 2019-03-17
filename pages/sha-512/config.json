@@ -1,0 +1,8 @@
+{
+  "id": "sha-512",
+  "name": "SHA-512 Generator",
+  "description": "SHA-512 calculator generates SHA-512 checksum of text or string.",
+  "author": "leplay",
+  "category": "Generators",
+  "related": ["sha-256", "sha-224", "sha-384"]
+}

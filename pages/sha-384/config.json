@@ -1,0 +1,8 @@
+{
+  "id": "sha-384",
+  "name": "SHA-384 Generator",
+  "description": "SHA-384 calculator generates SHA-384 checksum of text or string.",
+  "author": "leplay",
+  "category": "Generators",
+  "related": ["sha-256", "sha-512", "sha-224"]
+}

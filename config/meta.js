@@ -1,4 +1,4 @@
-import tools from './tools'
+import tools from '../tools'
 
 const toolsById = tools.reduce(function (acc, val) {
   acc[val.id] = val

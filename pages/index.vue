@@ -29,7 +29,7 @@
 </template>
 
 <script>
-import tools from '@/config/tools'
+import tools from '@/tools'
 import categories from '@/config/categories'
 export default {
   head () {

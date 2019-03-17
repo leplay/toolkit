@@ -1,0 +1,8 @@
+{
+  "id": "url-encoder",
+  "name": "URL Encoder",
+  "description": "URL encoder converts special URL characters in strings to safe percent-sign characters.",
+  "author": "leplay",
+  "category": "Encoders & Decoders",
+  "related": ["url-decoder"]
+}

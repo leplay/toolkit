@@ -1,0 +1,8 @@
+{
+  "id": "user-agent",
+  "name": "User Agent",
+  "description": "Show your web browser's user agent.",
+  "author": "leplay",
+  "category": "Others",
+  "related": []
+}

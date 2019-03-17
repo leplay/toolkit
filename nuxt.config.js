@@ -1,3 +1,4 @@
+const fs = require('fs')
 const pkg = require('./package')
 
 module.exports = {
@@ -78,7 +79,7 @@ module.exports = {
       })
     }
   },
-
+  watch: ['./pages/*/config.json'],
   /*
   ** Build configuration
   */
@@ -86,13 +87,30 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    analyze: true,
+    analyze: false,
     splitChunks: {
       layouts: false,
       pages: true,
       commons: true
     },
     extend (config, ctx) {
+      // Transform all pages/*/config.json into tools.json
+      if (ctx.isServer) {
+        const files = fs.readdirSync('./pages/')
+        var tools = []
+        for (let i = 0; i < files.length; i++) {
+          try {
+            let file = fs.readFileSync(`./pages/${files[i]}/config.json`, 'utf8')
+            let meta = fs.statSync(`./pages/${files[i]}/index.vue`)
+            let config = JSON.parse(file)
+            config.created = meta.birthtime
+            config.modified = meta.mtime
+            tools.push(config)
+          } catch (err) {
+          }
+        }
+        fs.writeFileSync('./tools.json', JSON.stringify(tools))
+      }
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
