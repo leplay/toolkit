@@ -4,18 +4,18 @@
     <p class="description has-text-centered">{{ app.description }}</p>
 
     <div class="tool-box columns-one">
-      <OutputEditor class="column" :data="dataMap" :readonly="true" />
+      <TextOutput class="column" :data="dataMap" :readonly="true" />
     </div>
   </div>
 </template>
 
 <script>
 import meta from '@/config/meta'
-import OutputEditor from '@/components/OutputEditor'
+import TextOutput from '@/components/TextOutput'
 const app = meta('user-agent')
 
 export default {
-  components: { OutputEditor },
+  components: { TextOutput },
   head () {
     return app.head
   },

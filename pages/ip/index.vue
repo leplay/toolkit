@@ -4,7 +4,7 @@
     <p class="description has-text-centered">{{ app.description }}</p>
 
     <div class="tool-box columns-one">
-      <OutputEditor class="column" :data="dataMap" :readonly="true" />
+      <TextOutput class="column" :data="dataMap" :readonly="true" />
     </div>
     <p class="partner">The public IP address API is served by <a href="https://www.ipify.org/" target="_blank">ipify</a>.</p>
   </div>
@@ -12,11 +12,11 @@
 
 <script>
 import meta from '@/config/meta'
-import OutputEditor from '@/components/OutputEditor'
+import TextOutput from '@/components/TextOutput'
 const app = meta('ip')
 
 export default {
-  components: { OutputEditor },
+  components: { TextOutput },
   head () {
     return app.head
   },

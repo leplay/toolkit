@@ -35,5 +35,5 @@ export default {
 </script>
 
 <style>
-/* inherrit from InputEditor.vue */
+/* inherrit from TextInput.vue */
 </style>

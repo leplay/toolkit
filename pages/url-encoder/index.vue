@@ -4,20 +4,20 @@
     <p class="description has-text-centered">{{ app.description }}</p>
 
     <div class="tool-box columns-two">
-      <InputEditor class="column" />
-      <OutputEditor class="column" :data="dataMap" :readonly="true" />
+      <TextInput class="column" />
+      <TextOutput class="column" :data="dataMap" :readonly="true" />
     </div>
   </div>
 </template>
 
 <script>
 import meta from '@/config/meta'
-import InputEditor from '@/components/InputEditor'
-import OutputEditor from '@/components/OutputEditor'
+import TextInput from '@/components/TextInput'
+import TextOutput from '@/components/TextOutput'
 const app = meta('url-encoder')
 
 export default {
-  components: { InputEditor, OutputEditor },
+  components: { TextInput, TextOutput },
   head () {
     return app.head
   },

@@ -4,8 +4,8 @@
     <p class="description has-text-centered">{{ app.description }}</p>
 
     <div class="tool-box columns-two">
-      <InputEditor class="column" placeholder="Input your markdown here" />
-      <OutputEditor class="column" :data="dataMap" :readonly="true" />
+      <TextInput class="column" placeholder="Input your markdown here" />
+      <TextOutput class="column" :data="dataMap" :readonly="true" />
     </div>
   </div>
 </template>
@@ -13,14 +13,14 @@
 <script>
 import showdown from 'showdown'
 import meta from '@/config/meta'
-import InputEditor from '@/components/InputEditor'
-import OutputEditor from '@/components/OutputEditor'
+import TextInput from '@/components/TextInput'
+import TextOutput from '@/components/TextOutput'
 const app = meta('markdown-to-html')
 
 const converter = new showdown.Converter()
 
 export default {
-  components: { InputEditor, OutputEditor },
+  components: { TextInput, TextOutput },
   head () {
     return app.head
   },

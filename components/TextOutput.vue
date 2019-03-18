@@ -1,9 +1,9 @@
 <template>
   <div class="editor" :class="{ readonly: readonly }">
     <b-tabs class="tool-tabs" @change="switchTab">
-      <b-tab-item v-for="output in data" :key="output.label" :label="output.label">
+      <b-tab-item v-for="(output, index) in data" :key="index" :label="output.label || 'result'">
         <textarea ref="output" class="textarea" spellcheck="false" :value="output.data" :placeholder="placeholder" :readonly="readonly" />
-        <div class="status-bar">
+        <div v-if="output.data" class="status-bar">
           <button class="button action is-info is-outlined" @click="copy">COPY</button>
           <div v-show="output.data.length" class="word-count">{{ output.data.length }}</div>
         </div>
@@ -18,7 +18,9 @@ export default {
     data: {
       type: Array,
       default: function () {
-        return []
+        return [{
+          label: 'result'
+        }]
       }
     },
     placeholder: {
@@ -131,6 +133,7 @@ export default {
 .editor .status-bar {
   overflow: hidden;
   line-height: 36px;
+  margin-top: 12px;
 }
 .editor .status-bar .button.action {
   float: left;
