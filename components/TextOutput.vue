@@ -2,7 +2,7 @@
   <div class="editor" :class="{ readonly: readonly }">
     <b-tabs class="tool-tabs" @change="switchTab">
       <b-tab-item v-for="(output, index) in data" :key="index" :label="output.label || 'result'">
-        <textarea ref="output" class="textarea" spellcheck="false" :value="output.data" :placeholder="placeholder" :readonly="readonly" />
+        <textarea ref="output" class="textarea" spellcheck="false" :value="output.data" :placeholder="placeholder || 'Result'" :readonly="readonly" />
         <div v-if="output.data" class="status-bar">
           <button class="button action is-info is-outlined" @click="copy">COPY</button>
           <div v-show="output.data.length" class="word-count">{{ output.data.length }}</div>

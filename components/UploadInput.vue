@@ -21,7 +21,7 @@ export default {
   props: {
     accept: {
       type: String,
-      default: '*'
+      default: ''
     },
     tip: {
       type: String,

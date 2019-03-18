@@ -5,33 +5,17 @@
 
     <div class="tool-box columns-two">
       <UploadInput class="column" accept="image/*" tip="Support JPG / GIF / PNG / WebP / SVG / BMP." />
-      <TextOutput class="column" :data="dataMap" :readonly="true" />
+      <TextOutput class="column" :placeholder="placeholder" :data="dataMap" :readonly="true" />
     </div>
   </div>
 </template>
 
 <script>
 import meta from '@/config/meta'
+import convertFileToBase64 from '@/plugins/convertFileToBase64'
 import UploadInput from '@/components/UploadInput'
 import TextOutput from '@/components/TextOutput'
 const app = meta('image-to-base64')
-
-const readFile = function (file) {
-  return new Promise(function (resolve, reject) {
-    if (!file) {
-      return reject(new Error())
-    }
-    try {
-      const reader = new window.FileReader()
-      reader.onloadend = function () {
-        resolve(reader.result)
-      }
-      reader.readAsDataURL(file)
-    } catch (error) {
-      reject(error)
-    }
-  })
-}
 
 export default {
   components: { UploadInput, TextOutput },
@@ -41,7 +25,8 @@ export default {
   data () {
     return {
       app,
-      dataMap: [{}]
+      dataMap: [{}],
+      placeholder: ''
     }
   },
   watch: {
@@ -49,10 +34,8 @@ export default {
       if (!file) {
         return
       }
-      this.dataMap = [{
-        label: 'loading'
-      }]
-      const result = await readFile(file)
+      this.placeholder = 'loading'
+      const result = await convertFileToBase64(file)
       this.dataMap = [{
         data: result
       }]
