@@ -1,0 +1,7 @@
+{
+  "id": "image-to-base64",
+  "name": "Image to Base64 Converter",
+  "description": "Convert image to base64-encoded strings",
+  "author": "leplay",
+  "category": "Converters"
+}
