@@ -1,6 +1,6 @@
 {
   "name": "toolkit.city",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Open source tools collection",
   "author": "leplay",
   "private": false,
@@ -17,6 +17,7 @@
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/google-analytics": "^2.1.0",
     "cross-env": "^5.2.0",
+    "jspdf": "^1.5.3",
     "md5": "^2.2.1",
     "nuxt": "^2.4.0",
     "nuxt-buefy": "^0.3.3",
