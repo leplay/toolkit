@@ -2,7 +2,7 @@ const isDev = process.env.NODE_ENV === 'development'
 
 const config = {
   name: 'Toolkit',
-  base: 'https://leplay.github.io/toolkit',
+  base: 'https://toolkit.now.sh/',
   git: 'https://github.com/leplay/toolkit'
 }
 

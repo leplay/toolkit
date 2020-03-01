@@ -71,7 +71,7 @@ module.exports = {
   },
   sitemap: {
     generate: true,
-    hostname: 'https://leplay.github.io/toolkit',
+    hostname: 'https://toolkit.now.sh',
     filter ({ routes }) {
       return routes.map(function (route) {
         route.url = `${route.url}/`

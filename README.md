@@ -1,6 +1,6 @@
 # Toolkit
 
-> Open source tools collection [https://leplay.github.io/toolkit/](https://leplay.github.io/toolkit/)
+> Open source tools collection [https://toolkit.now.sh/](https://toolkit.now.sh/)
 
 ## Build Setup
 
