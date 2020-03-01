@@ -2,9 +2,8 @@ const isDev = process.env.NODE_ENV === 'development'
 
 const config = {
   name: 'Toolkit',
-  base: 'https://toolkit.city',
-  functions: 'https://toolkit.city/.netlify/functions',
-  git: 'https://github.com/leplay/toolkit.city'
+  base: 'https://leplay.github.io/toolkit',
+  git: 'https://github.com/leplay/toolkit'
 }
 
 if (isDev) {

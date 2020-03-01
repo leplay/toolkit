@@ -1,6 +1,6 @@
-# Toolkit.city
+# Toolkit
 
-> Open source tools collection [https://toolkit.city/](https://toolkit.city/)
+> Open source tools collection [https://leplay.github.io/toolkit/](https://leplay.github.io/toolkit/)
 
 ## Build Setup
 

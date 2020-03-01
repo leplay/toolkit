@@ -1,3 +1,3 @@
-# Contributing to Toolkit.city
+# Contributing to Toolkit
 
 // to do

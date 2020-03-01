@@ -71,7 +71,7 @@ module.exports = {
   },
   sitemap: {
     generate: true,
-    hostname: 'https://toolkit.city',
+    hostname: 'https://leplay.github.io/toolkit',
     filter ({ routes }) {
       return routes.map(function (route) {
         route.url = `${route.url}/`
@@ -100,9 +100,9 @@ module.exports = {
         var tools = []
         for (let i = 0; i < files.length; i++) {
           try {
-            let file = fs.readFileSync(`./pages/${files[i]}/config.json`, 'utf8')
-            let meta = fs.statSync(`./pages/${files[i]}/index.vue`)
-            let config = JSON.parse(file)
+            const file = fs.readFileSync(`./pages/${files[i]}/config.json`, 'utf8')
+            const meta = fs.statSync(`./pages/${files[i]}/index.vue`)
+            const config = JSON.parse(file)
             config.created = meta.birthtime
             config.modified = meta.mtime
             tools.push(config)
