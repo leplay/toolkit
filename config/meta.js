@@ -9,7 +9,7 @@ export default function (id) {
   const app = toolsById[id]
   if (!app) return null
   app.head = {
-    title: app.name + ' - Toolkit.city',
+    title: app.name + ' - Toolkit',
     meta: [
       {
         hid: 'description',

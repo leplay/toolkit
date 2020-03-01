@@ -1,9 +1,9 @@
 <template>
   <header class="header">
     <div class="container">
-      <a href="/" class="title">Toolkit.city</a>
+      <a href="/" class="title">Toolkit</a>
       <div class="github">
-        <a class="github-button" href="https://github.com/toolkitcity/toolkit.city" data-size="large" data-show-count="true" aria-label="Star leplay/toolkit.city on GitHub">Star</a>
+        <a class="github-button" href="https://github.com/leplay/toolkit" data-size="large" data-show-count="true" aria-label="Star leplay/toolkit on GitHub">Star</a>
       </div>
     </div>
   </header>

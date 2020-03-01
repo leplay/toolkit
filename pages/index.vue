@@ -1,17 +1,17 @@
 <template>
   <section class="home">
     <h1>
-      <a href="/" class="title">Toolkit.city</a>
+      <a href="/" class="title">Toolkit</a>
     </h1>
     <h2 class="subtitle">Open source tools collection</h2>
 
     <div class="github">
       <a
         class="github-button"
-        href="https://github.com/toolkitcity/toolkit.city"
+        href="https://github.com/leplay/toolkit"
         data-size="large"
         data-show-count="true"
-        aria-label="Star leplay/toolkit.city on GitHub"
+        aria-label="Star leplay/toolkit on GitHub"
       >Star</a>
     </div>
 
@@ -34,7 +34,7 @@ import categories from '@/config/categories'
 export default {
   head () {
     return {
-      title: 'Toolkit.city',
+      title: 'Toolkit',
       meta: [
         { hid: 'description', name: 'description', content: 'Open source tools collection for making lives easier.' }
       ]

@@ -17,9 +17,9 @@
 export default {
   head () {
     return {
-      title: 'Open Source Credits - Toolkit.city',
+      title: 'Open Source Credits - Toolkit',
       meta: [
-        { hid: 'description', name: 'description', content: 'Open source software at Tookit.city' }
+        { hid: 'description', name: 'description', content: 'Open source software at Tookit' }
       ]
     }
   }

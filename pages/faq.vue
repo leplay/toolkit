@@ -2,8 +2,8 @@
   <div class="page container">
     <h2 class="title">FAQ</h2>
     <ul>
-      <li><a href="https://github.com/toolkitcity/toolkit.city/issues">Bug report</a></li>
-      <li><a href="https://github.com/toolkitcity/toolkit.city/blob/master/CONTRIBUTING.md">Contributing to Toolkit.city</a></li>
+      <li><a href="https://github.com/leplay/toolkit/issues">Bug report</a></li>
+      <li><a href="https://github.com/leplay/toolkit/blob/master/CONTRIBUTING.md">Contributing to Toolkit</a></li>
     </ul>
   </div>
 </template>
@@ -12,9 +12,9 @@
 export default {
   head () {
     return {
-      title: 'FAQ - Toolkit.city',
+      title: 'FAQ - Toolkit',
       meta: [
-        { hid: 'description', name: 'description', content: 'Open source software at Tookit.city' }
+        { hid: 'description', name: 'description', content: 'Open source software at Tookit' }
       ]
     }
   }
